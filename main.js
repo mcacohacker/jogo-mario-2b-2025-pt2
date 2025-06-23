@@ -8,6 +8,11 @@ let startGame = false;
 const jump = () => {
     mario.classList.add("jump");
 
+pipe.style.animation = "nome";
+
+startButton.style.display = "none";
+mario.style.opacity = "1";
+style.opacity = "1";
     setTimeout(() => {
         mario.classList.remove("jump");
     }

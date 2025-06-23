@@ -53,4 +53,27 @@
   50% {bottom: 180px;}
   60% {bottom: 180px;}
   100% {bottom: 0;}
+
+}
+
+button:hover {
+  border: 2px solid ;
+  background: none;
+  color: green;
+}
+
+button.start {
+  display: block;
+}
+
+.game-over {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
