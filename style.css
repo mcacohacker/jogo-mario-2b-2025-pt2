@@ -71,9 +71,35 @@ button.start {
   height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   display: none;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
+}
+
+.game-over h1{
+  font-size: 3rem;
+  color:red;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+@keyframes .pipe-animation{
+  from {right: -80px;}
+  to {right: 100%;}
+}
+
+@keyframes clouds-animation{
+  from {right: -550px;}
+  to {right: 100%;}
+}
+
+@keyframes jump{
+  0% {bottom: 0;}
+  0% {bottom: 0;}
+  0% {bottom: 0;}
+  0% {bottom: 0;}
+  0% {bottom: 0;}
 }
