@@ -4,10 +4,15 @@ const startButtom = document.querySelector("start")
 const gameOverScreen = document.querySelect(".game-over")
 const gameOverScreen = document.querySelrctor(".game-over")
 
+
+audioStart = new Audio("./sound/audio_theme.mp3");
+const gameOverSound = new Audio("./sound/audio_gameover.mp3");
+
 let startGame = false;
 
 const jump = () => {
     gameStarted = true;
+    audioStart.play();
 
     pipe.style.animation = "pipe-animation 1.5s infine linear";
 
@@ -42,6 +47,9 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
         mario.style.width = "75px";
         mario.style.marginLeft = "50px";
 
+        audioStart.pause();
+        gameOverSound.play();
+        
         clearInterval(loop);
         gameOverScreen.style.display = "flex";
     }else if (pipePosition < 0 && gameStarted) {
